@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security-scan:
+    name: Security & Quality Checks
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: HTML5 Validation
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      with:
+        root: ./
+
+    - name: Check for sensitive data
+      run: |
+        echo "🔍 Scanning for sensitive information..."
+        if grep -r -i -E "(password|secret|token|api_key|private_key)" --exclude-dir=.git --exclude="*.yml" --exclude="*.md" .; then
+          echo "⚠️ Potential sensitive information found"
+          exit 1
+        else
+          echo "✅ No sensitive information detected"
+        fi
+
+    - name: Check file permissions
+      run: |
+        echo "🔒 Checking file permissions..."
+        find . -type f -perm /111 -not -path "./.git/*" | while read file; do
+          echo "⚠️ Executable file found: $file"
+        done
+        echo "✅ File permission check completed"
+
+    - name: Basic security headers check
+      run: |
+        echo "🛡️ Validating security headers in HTML..."
+        if grep -q "Content-Security-Policy" index.html; then
+          echo "✅ CSP header found"
+        else
+          echo "❌ CSP header missing"
+          exit 1
+        fi
