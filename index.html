@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- SEO & Social Media -->
+    <meta name="description" content="Senior Information Security Engineer with 7+ years expertise in compliance, application security, and enterprise risk management. Currently seeking leadership roles in Singapore's cybersecurity sector.">
+    <meta name="keywords" content="Information Security Engineer, Cybersecurity, PCI DSS, ISO27001, Application Security, DevSecOps, Singapore">
+    <meta name="author" content="Shee Siew Yi">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shee Siew Yi - Senior Information Security Engineer">
+    <meta property="og:description" content="Senior Information Security Engineer with 7+ years expertise in compliance, application security, and enterprise risk management.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://yourusername.github.io/">
+    
+    <!-- Performance -->
+    <meta name="theme-color" content="#a67c7a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <title>Shee Siew Yi - Senior Information Security Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #4a5568;
+            background: #f8f5f4;
+            font-size: 14px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15px;
+            background: white;
+            min-height: 297mm;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header {
+            text-align: left;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e4c1c5;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #a67c7a;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: #718096;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: #a67c7a;
+            transform: translateY(-1px);
+        }
+
+        .contact-item.telegram {
+            background: rgba(168, 124, 122, 0.1);
+            padding: 5px 10px;
+            border-radius: 15px;
+            border: 1px solid rgba(168, 124, 122, 0.3);
+        }
+
+        .contact-item.telegram:hover {
+            background: rgba(168, 124, 122, 0.2);
+            border-color: #a67c7a;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        .left-column {
+            padding-right: 20px;
+        }
+        
+        .right-column {
+            background: #f6f1f0;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: #2d3748;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #e4c1c5;
+            padding-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary-card {
+            background: white;
+            padding: 15px;
+            border-left: 4px solid #d4a5aa;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(212, 165, 170, 0.15);
+        }
+        
+        .summary-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #4a5568;
+            margin-bottom: 8px;
+        }
+        
+        .job {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .job:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #2d3748;
+        }
+        
+        .company {
+            color: #a67c7a;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .job-details {
+            font-size: 13px;
+            color: #718096;
+            margin-bottom: 12px;
+            margin-top: 6px;
+        }
+        
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .achievements li {
+            font-size: 13px;
+            margin-bottom: 6px;
+            padding-left: 18px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .achievements li:before {
+            content: "•";
+            color: #e4c1c5;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .achievement-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #d4a5aa;
+            box-shadow: 0 2px 6px rgba(212, 165, 170, 0.15);
+        }
+        
+        .achievement-icon {
+            color: #a67c7a;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        
+        .achievement-text {
+            flex: 1;
+        }
+        
+        .achievement-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        
+        .achievement-desc {
+            font-size: 13px;
+            color: #718096;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+        
+        .cert-item, .development-item, .career-plan-item, .tech-item {
+            background: white;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 3px solid #e4c1c5;
+            box-shadow: 0 1px 4px rgba(228, 193, 197, 0.12);
+        }
+        
+        .cert-name, .development-title, .career-plan-title, .tech-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        
+        .cert-desc, .development-desc, .career-plan-desc, .tech-desc {
+            font-size: 12px;
+            color: #718096;
+            line-height: 1.4;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .skill-item {
+            background: white;
+            padding: 8px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #2d3748;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(228, 193, 197, 0.12);
+        }
+        
+        .skill-level {
+            display: flex;
+            justify-content: center;
+            gap: 2px;
+            margin-top: 4px;
+        }
+        
+        .skill-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #e2e8f0;
+        }
+        
+        .skill-dot.filled {
+            background: #d4a5aa;
+        }
+        
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 8px 12px;
+            margin-bottom: 6px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(228, 193, 197, 0.12);
+        }
+        
+        .language-name {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 13px;
+        }
+        
+        .language-level {
+            font-size: 11px;
+            color: #718096;
+        }
+        
+        .education-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 15px;
+        }
+        
+        .university {
+            color: #a67c7a;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            margin-top: 3px;
+        }
+        
+        .edu-details {
+            font-size: 13px;
+            color: #718096;
+            margin-top: 6px;
+            line-height: 1.5;
+        }
+        
+        .current-status {
+            background: white;
+            border-left: 4px solid #c4a1a6;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(196, 161, 166, 0.15);
+        }
+        
+        .current-status-title {
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .character-illustration {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.8;
+        }
+        
+        .character-illustration img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: bottom right;
+        }
+
+        /* QR Code Modal Styles */
+        .qr-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(45, 55, 72, 0.8);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .qr-modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 350px;
+            width: 90%;
+            animation: slideIn 0.3s ease;
+            border: 2px solid #e4c1c5;
+        }
+
+        .qr-code-img {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(228, 193, 197, 0.3);
+            border: 2px solid #f6f1f0;
+        }
+
+        .qr-title {
+            color: #a67c7a;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .qr-subtitle {
+            color: #718096;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #a67c7a;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            color: #2d3748;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            to { 
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        @media screen and (max-width: 1200px) {
+            .character-illustration {
+                width: 280px;
+                height: 280px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .character-illustration {
+                display: none;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .left-column {
+                padding-right: 0;
+            }
+
+            .qr-modal-content {
+                padding: 20px;
+                max-width: 300px;
+            }
+
+            .qr-code-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+        
+        @media print {
+            @page {
+                margin: 0;
+                size: A4 portrait;
+            }
+            
+            body {
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
+                color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+                font-size: 12px !important;
+            }
+            
+            .container {
+                max-width: none !important;
+                margin: 0 !important;
+                padding: 15mm !important;
+                box-shadow: none !important;
+                min-height: auto !important;
+            }
+            
+            .character-illustration, .qr-modal {
+                display: none !important;
+            }
+            
+            .main-content {
+                gap: 20px !important;
+            }
+            
+            .section {
+                margin-bottom: 15px !important;
+                page-break-inside: avoid;
+            }
+            
+            .job {
+                page-break-inside: avoid;
+                margin-bottom: 12px !important;
+            }
+            
+            .achievement-item {
+                page-break-inside: avoid;
+                margin-bottom: 6px !important;
+            }
+
+            .contact-item.telegram {
+                background: none !important;
+                border: none !important;
+                padding: 0 !important;
+            }
+
+            .contact-item.telegram::after {
+                content: " (Scan QR Code)";
+                font-size: 10px;
+                color: #718096;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Character Illustration -->
+    <div class="character-illustration">
+        <img src="./assets/images/character-illustration.png" alt="Character Illustration" loading="lazy" />
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="name">SHEE SIEW YI</div>
+            <div class="title">Senior Information Security Engineer</div>
+            <div class="contact-info">
+                <div class="contact-item telegram" onclick="showQRCode()" role="button" tabindex="0" onkeydown="handleKeyDown(event, showQRCode)">
+                    📱 Telegram Contact
+                </div>
+                <div class="contact-item" onclick="window.open('mailto:ceilo.shee@gmail.com', '_blank')" role="button" tabindex="0" onkeydown="handleKeyDown(event, () => window.open('mailto:ceilo.shee@gmail.com', '_blank'))">
+                    ✉️ Email
+                </div>
+                <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/cielo-shee', '_blank')" role="button" tabindex="0" onkeydown="handleKeyDown(event, () => window.open('https://www.linkedin.com/in/cielo-shee', '_blank'))">
+                    💼 LinkedIn
+                </div>
+                <div class="contact-item">📍 Malaysia</div>
+            </div>
+        </div>
+
+        <!-- QR Code Modal -->
+        <div id="qrModal" class="qr-modal" onclick="hideQRCode()" role="dialog" aria-modal="true" aria-labelledby="qr-title">
+            <div class="qr-modal-content" onclick="event.stopPropagation()">
+                <span class="close-btn" onclick="hideQRCode()" role="button" tabindex="0" onkeydown="handleKeyDown(event, hideQRCode)" aria-label="Close modal">&times;</span>
+                <div class="qr-title" id="qr-title">📱 Telegram Contact</div>
+                <div class="qr-subtitle">Scan QR code to start secure conversation</div>
+                <img src="./assets/images/tg-qr-code.png" alt="Telegram QR Code" class="qr-code-img" loading="lazy" />
+                <div style="color: #a67c7a; font-size: 0.8em; margin-top: 10px; font-weight: 600;">
+                    🔒 Secure & Private Messaging
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-text">
+                <strong>Professional Overview:</strong> Senior Information Security Engineer with 7+ years expertise in compliance, application security, and enterprise risk management. Proven track record including 95% PCI DSS v4 compliance success and 25% reduction in security incidents. Currently pursuing CISSP certification while seeking leadership roles in Singapore's cybersecurity sector.
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="current-status">
+                    <div class="current-status-title">🎯 Professional Development Phase (Since June 2025)</div>
+                    <div class="summary-text" style="margin-bottom: 12px;">
+                        <strong>Employment Status:</strong> Actively seeking Senior Information Security Engineer positions in Singapore while pursuing professional development and advanced certifications.
+                    </div>
+                    
+                    <div class="development-grid">
+                        <div class="development-item">
+                            <div class="development-title">🏆 CISSP Certification Preparation</div>
+                            <div class="development-desc">Target: Q3 2025 examination (studying 15+ hours/week)</div>
+                        </div>
+                        
+                        <div class="development-item">
+                            <div class="development-title">🌐 International Conference Attendance</div>
+                            <div class="development-desc">BlackHat USA & DefCon 33 (August 2025) for latest cybersecurity trends</div>
+                        </div>
+                        
+                        <div class="development-item">
+                            <div class="development-title">🤖 AI Security Integration Learning</div>
+                            <div class="development-desc">On-going AI-powered cybersecurity solutions and automation workflows</div>
+                        </div>
+                        
+                        <div class="development-item">
+                            <div class="development-title">🎯 Active Job Search Strategy</div>
+                            <div class="development-desc">Targeting financial services, technology, and critical infrastructure sectors in Singapore</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Experience</div>
+                    
+                    <div class="job">
+                        <div class="job-title">Senior Information Security Officer</div>
+                        <div class="company">DCS Card Centre</div>
+                        <div class="job-details">📅 07/2024 - 05/2025 📍 Singapore</div>
+                        <div class="summary-text" style="margin-bottom: 8px;">🎯 Singapore's established payment card issuer expanding across China and Asia-Pacific through Mastercard, Visa, and UnionPay partnerships</div>
+                        <ul class="achievements">
+                            <li>Led PCI DSS v4 compliance project, evaluated and remediated 100+ control points achieving 80% compliance</li>
+                            <li>Designed and implemented enterprise SSO solution serving 200+ users across multiple business units</li>
+                            <li>Implemented enterprise-wide DLP solution covering 200+ endpoints, reducing data incidents by 25%</li>
+                            <li>Established cross-regional security architecture framework for Singapore, Malaysia and China operations</li>
+                            <li>Conducted comprehensive security assessments resulting in 30% reduction in critical vulnerabilities</li>
+                            <li>Developed automated incident response procedures and playbooks, reducing mean time to resolution (MTTR) by 40% and improving organizational security posture</li>
+                            <li>Managed enterprise endpoint security infrastructure including EDR deployment and policy enforcement, ensuring 100% compliance with organizational security standards and regulatory requirements</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">Career Break | Professional Development</div>
+                        <div class="company">Personal & Family Care</div>
+                        <div class="job-details">📅 09/2022 - 07/2024 📍 Malaysia</div>
+                        <ul class="achievements">
+                            <li>Family caregiving responsibilities</li>
+                            <li>Earned Google Cybersecurity Professional Certificate with 98% average completion rate across 6 specialized courses</li>
+                            <li>Actively participated in cybersecurity communities and maintained awareness of industry trends and emerging threats</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">Information Security Engineer</div>
+                        <div class="company">HuoXian Security Technology</div>
+                        <div class="job-details">📅 09/2021 - 09/2022 📍 Beijing, China</div>
+                        <div class="summary-text" style="margin-bottom: 8px;">🎯 Beijing-based cybersecurity startup specializing in intelligent application security technologies, serving 100+ enterprise clients across finance, e-commerce, and technology sectors</div>
+                        <ul class="achievements">
+                            <li>Authored comprehensive IAST (Interactive Application Security Testing) product documentation including API integration guides, deployment manuals, and troubleshooting resources, reducing customer onboarding time by 35%</li>
+                            <li>Delivered technical presentations and product demonstrations to 50+ prospective clients, achieving 80% demo-to-trial conversion rate and directly contributing to startup's customer acquisition goals</li>
+                            <li>Maintained and optimized 500+ security detection rules covering OWASP Top 10 vulnerabilities, reducing false positive rates by 30% and improving product accuracy for enterprise deployments</li>
+                            <li>Collaborated cross-functionally with product, engineering, and sales teams to translate customer feedback into product roadmap priorities, resulting in 3 major feature releases and 25% increase in customer retention</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-title">Information Security Engineer</div>
+                        <div class="company">Information Security Services Digital United (ISSDU)</div>
+                        <div class="job-details">📅 11/2017 - 05/2021 📍 Taipei, Taiwan</div>
+                        <div class="summary-text" style="margin-bottom: 8px;">🎯 Taiwan's premier cybersecurity consulting firm serving 200+ enterprise clients across financial services, manufacturing, and government sectors</div>
+                        <ul class="achievements">
+                            <li>Conducted 30+ comprehensive security assessments using OWASP methodology, identified and remediated 100+ critical vulnerabilities including SQL injection, XSS, CSRF, and authentication bypass flaws</li>
+                            <li>Designed and implemented SSDLC frameworks for 15+ enterprise clients, reducing post-deployment security issues by 60% and improving secure coding practices</li>
+                            <li>Revolutionized assessment delivery process through automation and standardization, reducing cycle time from 15 to 7 days while maintaining quality standards, improving team efficiency by 40%</li>
+                            <li>Delivered security coding training programs to 100+ developers and stakeholders across multiple industries, achieving 95% satisfaction rating and measurable improvement in secure coding practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Leadership & Collaboration</div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🎯</div>
+                        <div class="achievement-text">
+                            <div class="achievement-title">Cross-Functional Project Leadership</div>
+                            <div class="achievement-desc">Led cross-functional PCI DSS v4 compliance initiative across IT, Risk, and Operations teams, aligning 30+ stakeholders and delivering milestones on time under regulatory scrutiny</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-icon">👥</div>
+                        <div class="achievement-text">
+                            <div class="achievement-title">Regional Security Management</div>
+                            <div class="achievement-desc">Oversaw regional cybersecurity programs across Singapore, Malaysia, and China, standardizing technical controls and strengthening risk governance in alignment with compliance mandates</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🎯</div>
+                        <div class="achievement-text">
+                            <div class="achievement-title">Strategic Stakeholder Engagement</div>
+                            <div class="achievement-desc">Partnered with senior leadership and department heads to align enterprise security strategy with business objectives, translating technical priorities into measurable organizational value</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-icon">👥</div>
+                        <div class="achievement-text">
+                            <div class="achievement-title">Mentorship & Cybersecurity Enablement</div>
+                            <div class="achievement-desc">Mentored 30+ developers through secure coding workshops and led enterprise-wide security awareness training, building a security-first culture across business units</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Education</div>
+                    
+                    <div class="education-item">
+                        <div class="degree">M.S. in Information Systems</div>
+                        <div class="university">National Tsing Hua University</div>
+                        <div class="edu-details">📅 09/2012 - 06/2016 📍 Hsinchu, Taiwan<br>🏆 Ministry of Education Scholarship • Economic Affairs Technology Competition Award 2013</div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="degree">B.S. in Information Management</div>
+                        <div class="university">National Chung Hsing University</div>
+                        <div class="edu-details">📅 09/2008 - 06/2012 📍 Taichung, Taiwan<br>🏆 Trend Micro Technology Competition Awards 2011-2012</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="section">
+                    <div class="section-title">Key Achievements</div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-text">
+                            <div class="achievement-title">Led Compliance Project</div>
+                            <div class="achievement-desc">Achieved 80% PCI DSS v4 compliance across 100+ control points in financial payment systems</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-text">
+                            <div class="achievement-title">Enhanced Team Efficiency</div>
+                            <div class="achievement-desc">Reduced assessment delivery cycle by 50% and improved team productivity by 40%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-text">
+                            <div class="achievement-title">Designed SSO Solution</div>
+                            <div class="achievement-desc">Implemented SSO solution serving 200+ users across multiple business units and regional offices</div>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-text">
+                            <div class="achievement-title">Enhanced Security Operations</div>
+                            <div class="achievement-desc">Reduced security incidents by 40% through DLP implementation and automated response procedures</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Certification</div>
+                    
+                    <div class="cert-item">
+                        <div class="cert-name">CISSP (In Preparation)</div>
+                        <div class="cert-desc">Target Q3 2025 for enhanced cybersecurity leadership</div>
+                    </div>
+                    
+                    <div class="cert-item">
+                        <div class="cert-name">Google Cybersecurity (2024)</div>
+                        <div class="cert-desc">Professional Certificate in cybersecurity principles (2024)</div>
+                    </div>
+                    
+                    <div class="cert-item">
+                        <div class="cert-name">ISC2 Certified in Cybersecurity (2024)</div>
+                        <div class="cert-desc">Foundation certification in cybersecurity</div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-name">ISO27001 Lead Auditor (2021)</div>
+                        <div class="cert-desc">Information security management systems auditing</div>
+                    </div>
+                    
+                    <div class="cert-item">
+                        <div class="cert-name">Certified Ethical Hacker (2020)</div>
+                        <div class="cert-desc">Penetration testing and vulnerability assessment methodologies</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Languages</div>
+
+                    <div class="language-item">
+                        <div class="language-name">English</div>
+                        <div class="language-level">Working Proficiency</div>
+                    </div>
+                    
+                    <div class="language-item">
+                        <div class="language-name">Chinese</div>
+                        <div class="language-level">Native</div>
+                    </div>
+                    
+                    <div class="language-item">
+                        <div class="language-name">Malay</div>
+                        <div class="language-level">Advanced</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Core Skills</div>
+                    
+                    <!-- 合規與標準 -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #a67c7a; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">🛡️ Compliance & Standards</div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div>Security Compliance</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div>ISO 27001</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div>PCI DSS</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div>Data Protection</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot"></div>
+                                    <div class="skill-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 安全評估 -->
+                    <div style="margin-bottom: 15px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #a67c7a; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">🔍 Security Assessment</div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div>Application Security</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div>Vulnerability Mgmt</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <!-- 開發與運營 -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #a67c7a; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">🔧 Development & Operations</div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div>SSDLC</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div>DevSecOps</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div>Security Integration</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 身份與資料安全 -->
+                    <div style="margin-bottom: 20px;">
+                        <div style="font-size: 12px; font-weight: 600; color: #a67c7a; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">🔐 Identity & Data Security</div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div>IAM</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot"></div>
+                                    <div class="skill-dot"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div>DLP</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot"></div>
+                                    <div class="skill-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 新興技術 -->
+                    <div>
+                        <div style="font-size: 12px; font-weight: 600; color: #a67c7a; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">🤖 Emerging Technology</div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div>AI Security</div>
+                                <div class="skill-level">
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot filled"></div>
+                                    <div class="skill-dot"></div>
+                                    <div class="skill-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Tech Stack</div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-title">🛡️ Application Security Testing</div>
+                        <div class="tech-desc"><strong>SAST:</strong> Fortify, Checkmarx, Semgrep<br><strong>DAST:</strong> Nessus, Qualys, Tenable</div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-title">💻 Development & Automation</div>
+                        <div class="tech-desc"><strong>Programming:</strong> Python<br><strong>Workflow Automation:</strong> N8N<br><strong>Scripting:</strong> PowerShell, Bash</div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-title">🔒 Data Loss Prevention</div>
+                        <div class="tech-desc"><strong>DLP Solutions:</strong> Seal Suite</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Security: Input validation and sanitization
+        function sanitizeInput(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function showQRCode() {
+            const modal = document.getElementById('qrModal');
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                // Focus management for accessibility
+                modal.focus();
+            }
+        }
+
+        function hideQRCode() {
+            const modal = document.getElementById('qrModal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Keyboard accessibility handler
+        function handleKeyDown(event, callback) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                callback();
+            }
+        }
+
+        // Security: ESC key handling with validation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                hideQRCode();
+            }
+        });
+
+        // Security: Content Security and DOM protection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prevent drag and drop of potentially malicious content
+            document.addEventListener('dragover', function(e) {
+                e.preventDefault();
+            });
+            
+            document.addEventListener('drop', function(e) {
+                e.preventDefault();
+            });
+
+            // Enhanced contact item interactions with security validation
+            const contactItems = document.querySelectorAll('.contact-item');
+            
+            contactItems.forEach(item => {
+                if (!item.classList.contains('telegram')) {
+                    item.addEventListener('mouseenter', function() {
+                        this.style.transform = 'translateY(-1px)';
+                    });
+                    
+                    item.addEventListener('mouseleave', function() {
+                        this.style.transform = 'translateY(0)';
+                    });
+                }
+            });
+
+            // Security: Disable right-click on sensitive elements
+            document.querySelectorAll('.qr-code-img').forEach(img => {
+                img.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                });
+            });
+        });
+
+        // Security: Basic XSS protection for dynamic content
+        if (typeof window !== 'undefined') {
+            // Disable eval and similar dangerous functions if not needed
+            window.eval = function() {
+                throw new Error('eval() is disabled for security reasons.');
+            };
+        }
+    </script>
+</body>
+</html>
